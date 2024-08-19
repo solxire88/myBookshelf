@@ -1,35 +1,106 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Literature></Literature>
+      <Science ></Science>
     </>
   )
 }
 
-export default App
+
+
+function Literature(){
+  function turnScience(){
+    document.body.style.backgroundColor = '#1e1e1e'
+    document.querySelector('#science').style.display = 'block';
+    document.querySelector('#literature').style.display = 'none';
+  }
+  function turnLiterature(){
+    document.body.style.backgroundColor = '#EDE8D0'
+    document.querySelector('#science').style.display = 'none';
+    document.querySelector('#literature').style.display = 'block';
+  }
+
+  return (
+    <>
+    <div id='literature'>
+      <div className='nav container'>
+        <h1 className='title'>The Literature <br></br> Bookshelf</h1>
+        <div className='topSettings'>
+          <div className='dot'><a href='#' onClick={() => {turnLiterature()}}>L</a></div>
+          <div className='dot2'><a href='#' onClick={()=>{turnScience()}}>S</a></div>
+          <input type='text'></input>
+        </div>
+      </div>
+      <div className='grid container'>
+        <Card title='Discourses And Selected writings' author='Epictetus' price='1200 DA' img_url='https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696978285i/130548586.jpg'></Card>
+        <Card title='Discourses And Selected writings' author='Epictetus' price='1200 DA' img_url='https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696978285i/130548586.jpg'></Card>
+        <Card title='Discourses And Selected writings' author='Epictetus' price='1200 DA' img_url='https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696978285i/130548586.jpg'></Card>
+        <Card title='Discourses And Selected writings' author='Epictetus' price='1200 DA' img_url='https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696978285i/130548586.jpg'></Card>
+        <Card title='Discourses And Selected writings' author='Epictetus' price='1200 DA' img_url='https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696978285i/130548586.jpg'></Card>
+        <Card title='Discourses And Selected writings' author='Epictetus' price='1200 DA' img_url='https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696978285i/130548586.jpg'></Card>
+
+      </div>
+    </div>
+
+    </>
+  )
+}
+
+
+
+
+function Science(){
+
+  function turnLiterature(){
+    document.body.style.backgroundColor = '#EDE8D0'
+    document.querySelector('#science').style.display = 'none';
+    document.querySelector('#literature').style.display = 'block';
+  }
+  function turnScience(){
+    document.body.style.backgroundColor = '#1e1e1e'
+    document.querySelector('#science').style.display = 'block';
+    document.querySelector('#literature').style.display = 'none';
+  }
+
+
+  return (
+    <>
+    <div id='science'>
+      <div className='nav container'>
+        <h1 className='title'>The Science <br></br> Bookshelf</h1>
+        <div className='topSettings'>
+          <div className='dot'><a href='#' onClick={() => turnLiterature()}>L</a></div>
+          <div className='dot2'><a href='#' onClick={()=>turnScience()}>S</a></div>
+          <input type='text'></input>
+        </div>
+      </div>
+      <div className='grid container'>
+        <Card title='Discourses And Selected writings' author='Epictetus' price='1200 DA' img_url='https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696978285i/130548586.jpg'></Card>
+        <Card title='Discourses And Selected writings' author='Epictetus' price='1200 DA' img_url='https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696978285i/130548586.jpg'></Card>
+        <Card title='Discourses And Selected writings' author='Epictetus' price='1200 DA' img_url='https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696978285i/130548586.jpg'></Card>
+        <Card title='Discourses And Selected writings' author='Epictetus' price='1200 DA' img_url='https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696978285i/130548586.jpg'></Card>
+        <Card title='Discourses And Selected writings' author='Epictetus' price='1200 DA' img_url='https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696978285i/130548586.jpg'></Card>
+        <Card title='Discourses And Selected writings' author='Epictetus' price='1200 DA' img_url='https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696978285i/130548586.jpg'></Card>
+      </div>
+    </div>
+    </>
+  )
+}
+
+
+function Card({title, author, price, img_url}){
+  
+  return(
+    <div className='card'>
+      <div className='image'><img src={img_url}></img></div>
+      <h2>{title}</h2>
+      <p>{author}</p>
+      <h3>{price}</h3>
+    </div>
+  )
+
+}
