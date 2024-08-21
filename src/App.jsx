@@ -82,6 +82,8 @@ function Science(){
   return (
     <>
     <div id='science'>
+    <div className="dot" id='up'><a href="#science"><svg id="Arrow-Up--Streamline-Carbon" xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" height="50" width="50"><desc>Arrow Up Streamline Icon: https://streamlinehq.com</desc><defs></defs><path d="M7.5 1.875 2.8125 6.5625l0.6609375 0.6609375L7.03125 3.6703125 7.03125 13.125l0.9375 0 0 -9.4546875 3.5578125 3.553125L12.1875 6.5625 7.5 1.875z" stroke-width="1"></path><path id="_Transparent_Rectangle_" d="M0 0h15v15H0Z" fill="none" stroke-width="1"></path></svg></a></div>
+
       <div className='nav container'>
         <h1 className='title'>The Science <br></br> Bookshelf</h1>
         <div className='topSettings'>
