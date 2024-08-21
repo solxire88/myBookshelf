@@ -137,9 +137,9 @@ function Popup(props){
           <label htmlFor="book">Book:</label>
           <input className='popupInput' type="text" name="$book" readOnly value={props.card.title} />
           <label htmlFor="fullName">Full Name:</label>
-          <input className='popupInput' type="text" name="$full name" />
+          <input className='popupInput' type="text" name="$full name" required />
           <label htmlFor="phone">Phone:</label>
-          <input className='popupInput' type="text" name="$phone"/>
+          <input className='popupInput' type="text" name="$phone" required/>
           <label htmlFor="phone">Adress:</label>
           <input className='popupInput' type="text" name="$adress"/>
           <div className="submit"><input type="submit" value="Submit" id='submit'/></div>
