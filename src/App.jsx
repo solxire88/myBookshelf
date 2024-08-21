@@ -35,7 +35,8 @@ function Literature(){
 
   return (
     <>
-    <div id='literature'>
+    <div className='hide' id='literature'>
+    <div className="dot" id='up'><a href="#literature"><img src="../assets/icons/Arrow-Up--Streamline-Carbon.svg" height='50' width='50'/></a></div>
       <div className='nav container'>
         <h1 className='title'>The Literature <br></br> Bookshelf</h1>
         <div className='topSettings'>
@@ -116,9 +117,9 @@ function Card({title, author, price, img_url, popup, outerData}){
       outerData({title})
     }}>
       <div className='image'><img src={img_url}></img></div>
-      <h2>{title}</h2>
-      <p>{author}</p>
-      <h3>{price}</h3>
+      <h2><a>{title}</a></h2>
+      <p><a>{author}</a></p>
+      <h3><a>{price}</a></h3>
     </div>
   )
 

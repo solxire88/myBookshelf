@@ -75,12 +75,18 @@ body {
   text-decoration: none;
 }
 
+#up{
+    position: fixed;
+    top: 80vh;
+    right: 5vw;
+}
+
 .topSettings > input {
   width: 80%;
   background-color: #c9c5b1;
   height: 50px;
   border: none;
-  font-size: 36px;
+  font-size: 26px;
   border-radius: 25px;
   padding: 0px 50px 0px 50px;
   background-image: url(../assets/icons/Search--Streamline-Carbon.svg);
@@ -103,16 +109,16 @@ body {
 .grid {
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(1, 200px);
+  grid-template-columns: repeat(2, 150px);
   gap: 15px;
 }
 
 .card {
   height: 450px;
-  width: 200px;
+  width: 150px;
   /* border: 1px solid black; */
   display: grid;
-  grid-template-columns: 200px;
+  grid-template-columns: 150px;
   grid-template-rows: 280px 70px 20px 20px;
   justify-content: center;
   gap: 10px;
@@ -120,7 +126,7 @@ body {
   text-align: center;
 }
 .card > .image > img {
-  height: 250px;
+  height: 200px;
   max-width: 100%;
 }
 .image {
@@ -131,6 +137,7 @@ body {
 .card > h3 {
   margin: 5px;
 }
+
 
 .popup {
   position: fixed;
@@ -160,6 +167,7 @@ body {
   gap: 4px;
   font-size: 18px;
   font-weight: bold;
+  transition: opacity 2s;
 }
 label {
   /* border: 1px solid black; */
