@@ -21,6 +21,34 @@ body {
 #science {
   display: none;
   color: #ede8d0;
+  animation: toScience 1s;
+}
+#literature{
+  animation: toLiterature 1s;
+}
+
+@keyframes toScience {
+  0%{
+    background-color: #ede8d0;
+    color: black;
+  }
+
+  100%{
+    background-color: #1e1e1e;
+    color: #ede8d0;
+  }
+}
+
+@keyframes toLiterature {
+  0%{
+    background-color: #1e1e1e;
+    color: #ede8d0;
+  }
+
+  100%{
+    background-color: #ede8d0;
+    color: black;
+  }
 }
 
 .title {
@@ -85,6 +113,7 @@ body {
     position: fixed;
     top: 80vh;
     right: 5vw;
+    z-index: 0;
 }
 
 .topSettings > input {
@@ -182,7 +211,22 @@ body {
   /* font-weight: bold; */
   transition: opacity 2s;
   color: black;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  animation: pop 500ms;
 }
+
+@keyframes pop {
+  0%{
+    opacity: 0%;
+  }
+
+  100%{
+    opacity: 100%;
+  }
+}
+
+
 #descp{
   display: flex;
   flex-direction: column;
@@ -209,6 +253,7 @@ hr{
   font-size: 12px;
   gap: 5px;
   flex-wrap: wrap;
+  margin: 10px;
 }
 .tag{
   background-color: #c9c5b1;
@@ -220,6 +265,7 @@ hr{
 #orderForm {
   display: none;
   font-weight: bold;
+  animation: pop 1s;
 }
 
 label {
