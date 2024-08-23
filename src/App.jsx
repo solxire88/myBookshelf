@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {data} from './data.js'
+import {data} from './newData.js'
 import {data2} from './data2.js'
 
 export default function App() {
@@ -30,8 +30,10 @@ function Literature(){
     document.querySelector('#science').style.display = 'none';
     document.querySelector('#literature').style.display = 'block';
   }
-  
-  console.log(clickedCardName.title)
+
+
+
+  console.log(clickedCardName)
 
   return (
     <>
@@ -51,7 +53,7 @@ function Literature(){
       {data.filter((item) => {
         return search.toLowerCase() === '' ? item : item.Book.toLowerCase().includes(search)
       }).map((item) => {
-          return <Card key={item.price} title = {item.Book} author={item.author} price={item.price} img_url={item.image} popup={() => {setCardPopup(true)}} outerData={(card) => {setClickedCardName(card)}}></Card>
+          return <Card key={crypto.randomUUID()} title = {item.Book} author={item.author} price={item.price} img_url={item.image} popup={() => {setCardPopup(true)}} outerData={(card) => {setClickedCardName(card)}} descp={item.descp} tags={item.tags}></Card>
         })}
       </div>
     </div>
@@ -99,7 +101,7 @@ function Science(){
       {data2.filter((item) => {
         return search.toLowerCase() === '' ? item : item.Book.toLowerCase().includes(search)
       }).map((item) => {
-          return <Card key={item.price} title = {item.Book} author={item.author} price={item.price} img_url={item.image} popup={() => {setCardPopup(true)}} outerData={(card) => {setClickedCardName(card)}}></Card>
+          return <Card key={crypto.randomUUID()} title = {item.Book} author={item.author} price={item.price} img_url={item.image} popup={() => {setCardPopup(true)}} outerData={(card) => {setClickedCardName(card)}} descp={item.descp} tags={item.tags}></Card>
         })}
       </div>        
       </div>
@@ -110,18 +112,18 @@ function Science(){
 
 
 
-function Card({title, author, price, img_url, popup, outerData}){
+function Card({title, author, price, img_url, popup, outerData, descp, tags}){
 
   
   return(
     <div className='card' onClick={() => {
       popup()
-      outerData({title})
+      outerData({title, descp, tags})
     }}>
       <div className='image'><img src={img_url}></img></div>
-      <h2><a>{title}</a></h2>
-      <p><a>{author}</a></p>
-      <h3><a>{price}</a></h3>
+      <div className='bookTitle'><a>{title}</a></div>
+      <div className='bookAuthor'><a>{author}</a></div>
+      <div className='bookPrice'><a>{price}</a></div>
     </div>
   )
 
@@ -129,13 +131,19 @@ function Card({title, author, price, img_url, popup, outerData}){
 
 
 function Popup(props){
+
+  function buyButton(){
+    document.querySelector('#descp').style.display = 'none'
+    document.querySelector('#orderForm').style.display = 'block'
+  }
+
   return (props.trigger) ? (
     <div className="popup">
       <div className="popup-inner">
         <div className="popupClose" onClick={() => {props.setTrigger()}}>
           <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" id="Close-Sharp--Streamline-Ionic-Sharp.svg" height="25" width="25"><desc>Close Sharp Streamline Icon: https://streamlinehq.com</desc><path fill="#000000" d="M47.52 5.9501 42.0499 0.48 24 18.5299 5.9499 0.48 0.48 5.9501 18.5299 24 0.48 42.0499 5.9499 47.52 24 29.4701 42.0499 47.52l5.4701 -5.4701L29.4699 24 47.52 5.9501Z" stroke-width="1"></path></svg>
         </div>
-        <form action='https://api.staticforms.xyz/submit' method='post'>
+        <form action='https://api.staticforms.xyz/submit' method='post' id='orderForm'>
           <input type="hidden" name="accessKey" value='23d277b2-5874-4237-90b5-4f380bad751f' />
           <label htmlFor="book">Book:</label>
           <input className='popupInput' type="text" name="$book" readOnly value={props.card.title} />
@@ -145,8 +153,27 @@ function Popup(props){
           <input className='popupInput' type="text" name="$phone" required/>
           <label htmlFor="phone">Adress:</label>
           <input className='popupInput' type="text" name="$adress"/>
-          <div className="submit"><input type="submit" value="Submit" id='submit'/></div>
+          <div className="submit"><input type="submit" value="Order" id='submit'/></div>
         </form>
+        <div id="descp">
+          <div id="descpTitle">
+            {props.card.title}
+          </div>
+          <div id="descpText">
+            <p>{props.card.descp}</p>
+          </div>
+          <div>
+          <hr />
+          <div className="descpTags">
+          {props.card.tags.map((item) => {
+            return <div className="tag">{item}</div>
+          })}
+          </div>
+          </div>
+          <div className="submit">
+            <button id='buyButton' onClick={() => {buyButton()}}>Buy Now</button>
+          </div>
+        </div>
       </div>
     </div>
   ) : "";

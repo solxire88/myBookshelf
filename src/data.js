@@ -1,3 +1,10 @@
+// Book : book title 
+// author : book author
+// price : book price 
+// image : image url
+// descp : book description
+// tags : book tags
+
 export const data = [{"Book":"12th & Delaware","author":"Rozelle Maides","price":1,"image":"http://dummyimage.com/250x200.png/dddddd/000000"},
     {"Book":"Stories of Lost Souls","author":"Raul Murra","price":2,"image":"http://dummyimage.com/250x200.png/ff4444/ffffff"},
     {"Book":"Background to Danger","author":"Nickie Kunz","price":3,"image":"http://dummyimage.com/250x200.png/cc0000/ffffff"},

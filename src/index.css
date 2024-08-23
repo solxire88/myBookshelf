@@ -5,6 +5,10 @@
 * {
   font-family: Playfair;
 }
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #ede8d0;
   font-family: Playfair;
@@ -15,6 +19,7 @@ body {
 #science {
   display: none;
   color: #ede8d0;
+  
 }
 
 .title {
@@ -86,7 +91,7 @@ body {
   background-color: #c9c5b1;
   height: 50px;
   border: none;
-  font-size: 26px;
+  font-size: 20px;
   border-radius: 25px;
   padding: 0px 50px 0px 50px;
   background-image: url(../assets/icons/Search--Streamline-Carbon.svg);
@@ -119,7 +124,7 @@ body {
   /* border: 1px solid black; */
   display: grid;
   grid-template-columns: 150px;
-  grid-template-rows: 280px 70px 20px 20px;
+  grid-template-rows: 240px 100px 20px 20px;
   justify-content: center;
   gap: 10px;
   align-items: center;
@@ -132,13 +137,18 @@ body {
 .image {
   overflow: hidden;
 }
-.card > h2,
-.card > p,
-.card > h3 {
-  margin: 5px;
+.bookTitle{
+  font-size: 20px;
+  font-weight: bold;
 }
-
-
+.bookAuthor{
+  font-size: 16px;
+}
+.bookPrice{
+  font-size: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
 .popup {
   position: fixed;
   top: 0;
@@ -166,9 +176,49 @@ body {
   flex-direction: column;
   gap: 4px;
   font-size: 18px;
-  font-weight: bold;
+  /* font-weight: bold; */
   transition: opacity 2s;
+  color: black;
 }
+#descp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+hr{
+  width: 100%;
+}
+
+#descpTitle{
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+#descpText{
+  font-size: 16px;
+}
+.descpTags{
+  width: 200px;
+  display: flex;
+  font-size: 12px;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.tag{
+  background-color: #c9c5b1;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+
+#orderForm {
+  display: none;
+  font-weight: bold;
+}
+
 label {
   /* border: 1px solid black; */
   margin-left: 8px;
@@ -200,17 +250,17 @@ label {
   display: flex;
   justify-content: center;
 }
-.submit > input {
+.submit > input, #buyButton {
   border-radius: 20px;
   border: none;
   background-color: #c9c5b1;
   height: 40px;
   width: 80px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
-.submit > input:active {
+.submit > input:active , #buyButton:active {
   background-color: #848277;
 }
 
