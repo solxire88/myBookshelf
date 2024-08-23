@@ -97,14 +97,12 @@ function Science(){
       <Popup trigger={cardPopup} setTrigger={(e) => {setCardPopup(false)}} card={clickedCardName}>
       </Popup>
       <div className='grid container'>
-      <div className='grid container'>
       {data2.filter((item) => {
         return search.toLowerCase() === '' ? item : item.Book.toLowerCase().includes(search)
       }).map((item) => {
           return <Card key={crypto.randomUUID()} title = {item.Book} author={item.author} price={item.price} img_url={item.image} popup={() => {setCardPopup(true)}} outerData={(card) => {setClickedCardName(card)}} descp={item.descp} tags={item.tags}></Card>
         })}
       </div>        
-      </div>
     </div>
     </>
   )

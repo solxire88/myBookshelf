@@ -21,7 +21,6 @@ body {
 #science {
   display: none;
   color: #ede8d0;
-  
 }
 
 .title {
@@ -116,10 +115,10 @@ body {
   /* border: 1px solid black; */
 }
 .grid {
-  justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 150px);
   gap: 15px;
+  justify-content: center;
 }
 
 .card {
