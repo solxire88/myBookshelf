@@ -357,6 +357,11 @@ function Popup(props) {
           <input className="popupInput" type="text" name="$phone" required />
           <label htmlFor="phone">Adress:</label>
           <input className="popupInput" type="text" name="$adress" />
+          <input
+              type="hidden"
+              name="redirectTo"
+              value="https://ls-bookshelf.netlify.app/"
+            ></input>
           <div className="submit">
             <input type="submit" value="Order" id="submit" />
           </div>
@@ -500,6 +505,11 @@ function CartPopup(props) {
           <div className="submit">
             <input type="submit" value="Order" id="submit" />
           </div>
+          <input
+              type="hidden"
+              name="redirectTo"
+              value="https://ls-bookshelf.netlify.app/"
+            ></input>
           </form>
         </div>
         <div className="cartOrderButton">
