@@ -1,3 +1,3 @@
-# LS Bookshelf Bookstore
+# SL Bookshelf Bookstore
 
 Built a frontend webapp to sell some of my books, using vite and react.
