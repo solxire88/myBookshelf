@@ -37,7 +37,7 @@ export default function App() {
           }
         />
         <Route
-          path="/"
+          path="/science"
           element={
             <Science
               addToCartL={(e) => addToCart(e, cart)}
