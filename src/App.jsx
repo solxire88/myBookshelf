@@ -89,11 +89,11 @@ function Literature({ addToCartL, cart, deleteFromCartL }) {
             Literature <br></br> Bookshelf
           </h1>
           <div className="topSettings">
-            <div className="dot2">
-              <Link to="/science">S</Link>
-            </div>
             <div className="dot">
               <Link to="/">L</Link>
+            </div>
+            <div className="dot2">
+              <Link to="/science">S</Link>
             </div>
 
             <input
@@ -217,11 +217,11 @@ function Science({ addToCartL, cart, deleteFromCartL }) {
             Science <br></br> Bookshelf
           </h1>
           <div className="topSettings">
-            <div className="dot2">
-              <Link to="/Science">S</Link>
-            </div>
             <div className="dot">
               <Link to="/">L</Link>
+            </div>
+            <div className="dot2">
+              <Link to="/Science">S</Link>
             </div>
             <input
               type="text"
