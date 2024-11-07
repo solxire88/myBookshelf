@@ -388,6 +388,7 @@ function Popup(props) {
             readOnly
             value={props.card.title}
           />
+          {/* <br></br> */}
           <label htmlFor="fullName">Full Name:</label>
           <input
             className="popupInput"

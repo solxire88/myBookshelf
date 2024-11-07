@@ -352,13 +352,15 @@ label {
 }
 .popupInput {
   border-radius: 40px;
+  min-width: 180px;
   border: none;
   background-color: #c9c5b1;
   height: 40px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 20px;
+  margin: 0  20px 20px 0px;
   color: black;
+  /* border: 1px solid black; */
 }
 .popupInput:focus {
   outline: none;
