@@ -398,13 +398,16 @@ function Popup(props) {
           />
           <label htmlFor="phone">Phone:</label>
           <input className="popupInput" type="text" name="$phone" required />
-          <label htmlFor="phone">Adress:</label>
+          <label htmlFor="phone">Physical Adress:</label>
           <input className="popupInput" type="text" name="$adress" />
           <input
             type="hidden"
             name="redirectTo"
             value="https://ls-bookshelf.netlify.app/"
           ></input>
+          <div className="notice">
+            Your order will be processed once you click the order button.
+          </div>
           <div className="submit">
             <input type="submit" value="Order" id="submit" />
           </div>
@@ -545,8 +548,11 @@ function CartPopup(props) {
             />
             <label htmlFor="phone">Phone:</label>
             <input className="popupInput" type="text" name="$phone" required />
-            <label htmlFor="phone">Adress:</label>
+            <label htmlFor="phone">Physical Adress:</label>
             <input className="popupInput" type="text" name="$adress" />
+            <div className="notice">
+              Your order will be processed once you click the order button.
+            </div>
             <div className="submit">
               <input type="submit" value="Order" id="submit" />
             </div>

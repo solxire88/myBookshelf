@@ -2,7 +2,7 @@ export const data = [
   {
     Book: "On The Shortness Of Life",
     author: "Seneca",
-    price: "1000 DA",
+    price: "825 DA",
     image: "https://i.imgur.com/9PVxlHh.jpeg",
     descp:
       "The Stoic writings of the philosopher Seneca, who lived from c. 5 BC to AD 65, offer powerful insights into the art of living, the importance of reason and morality, and continue to provide.",
@@ -11,7 +11,7 @@ export const data = [
   {
     Book: "Discourses and Selected Writings",
     author: "Epictetus",
-    price: "1000 DA",
+    price: "825 DA",
     image: "https://i.imgur.com/htuilJO.jpeg",
     descp:
       "A new translation of the influential teachings of the great Stoic philosopher.",
@@ -20,7 +20,7 @@ export const data = [
   {
     Book: "Meditations",
     author: "Marcus Aurelius",
-    price: "1000 DA",
+    price: "825 DA",
     image: "https://i.imgur.com/ZReg2or.jpeg",
     descp:
       "A clear and eloquent leading translation of the Roman emperor’s reflections on human life and death.",
@@ -29,7 +29,7 @@ export const data = [
   {
     Book: "Letters From A Stoic",
     author: "Seneca",
-    price: "1000 DA",
+    price: "825 DA",
     image: "https://i.imgur.com/lcGoYoy.jpeg",
     descp:
       '"It is philosophy that has the duty of protecting us...without it no one can lead a life free of fear or worry."',
@@ -38,7 +38,7 @@ export const data = [
   {
     Book: "Pensées Pour Moi Même",
     author: "Marc Aurèle",
-    price: "1000 DA",
+    price: "825 DA",
     image: "https://i.imgur.com/lVEnUVd.png",
     descp:
       "Pensées pour moi-même est un recueil de réflexions intimes de Marc Aurèle, où il explore des idées stoïciennes sur la maîtrise de soi, l'acceptation du destin et la quête de la vertu. Ce texte offre des conseils pratiques pour vivre avec sagesse, sérénité et justice face aux défis de la vie.",
@@ -47,7 +47,7 @@ export const data = [
   {
     Book: "Meditations On First Philosophy",
     author: "Rene Descartes",
-    price: "1000 DA",
+    price: "825 DA",
     image: "https://i.imgur.com/Fkpjf7f.jpg", // Updated to a unique image for consistency
     descp:
       "Descartes's Meditations on First Philosophy, the fundamental and originating work of the modern era in Western philosophy, is presented here in Donald Cress's completely revised edition of his well-established translation, bringing this version even closer to Descartes's original, while maintaining its clear and accessible style.",
@@ -56,7 +56,7 @@ export const data = [
   {
     Book: "El Escape Cubano",
     author: "Mira Canion",
-    price: "1000 DA",
+    price: "750 DA",
     image: "https://i.imgur.com/uNPpT5N.jpg", // Updated to a unique image
     descp:
       "Inspired by a true story, El Escape Cubano is a first-person narrative reader with 140 unique words. In a matter of minutes, Miguel's happiness changes to gripping fear when he overhears his parents fighting about escaping from Cuba on a raft.",
@@ -65,7 +65,7 @@ export const data = [
   // {
   //   Book: "Manuel D'Épictète",
   //   author: "Épictète",
-  //   price: "1000 DA",
+  //   price: "825 DA",
   //   image: "https://i.imgur.com/0qC2a8Z.jpeg", // Updated to a unique image
   //   descp:
   //     "Le Manuel d'Épictète est un guide de sagesse stoïcienne, offrant des principes pour mener une vie vertueuse. Il enseigne l'importance de distinguer ce qui dépend de nous de ce qui échappe à notre contrôle. Son objectif ultime est d'atteindre la paix intérieure par la maîtrise de soi.",
@@ -74,10 +74,28 @@ export const data = [
   {
     Book: "Beyond Good and Evil",
     author: "Friedrich Nietzsche",
-    price: "1000 DA",
+    price: "825 DA",
     image: "https://i.imgur.com/4qT4bOh.jpg", // Updated to a unique image
     descp:
       "Nietzsche's exploration of morality and the concept of 'beyond good and evil', focusing on individual freedom, power, and societal values.",
     tags: ["Philosophy", "Non-Fiction", "Classics", "German"],
+  },
+  {
+    Book: "The Almanack Of Naval Ravikant",
+    author: "Eric Jorgenson",
+    price: "825 DA",
+    image: "https://i.imgur.com/iVPC41B.jpeg", // Updated to a unique image
+    descp:
+      "The Almanack of Naval Ravikant offers a collection of insights and principles from the entrepreneur and philosopher on how to build wealth and cultivate long-term happiness, emphasizing that these are learnable skills rather than mere luck or innate traits.",
+    tags: ["Business", "Non-Fiction", "Self Help", "Philosophy", "Psychology"],
+  },
+  {
+    Book: "The Seven Year Slip",
+    author: "Eric Jorgenson",
+    price: "825 DA",
+    image: "https://i.imgur.com/lIgqsHm.jpeg", // Updated to a unique image
+    descp:
+      "An overworked book publicist with a perfectly planned future hits a snag when she falls in love with her temporary roommate…only to discover he lives seven years in the past, in this witty and wise new novel from the New York Times bestselling author of The Dead Romantics.",
+    tags: ["Romance", "Fiction", "Self Help", "Fantasy"],
   },
 ];
