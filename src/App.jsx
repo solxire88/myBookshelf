@@ -389,17 +389,19 @@ function Popup(props) {
             value={props.card.title}
           />
           {/* <br></br> */}
-          <label htmlFor="fullName">Full Name:</label>
+          <label htmlFor="fullName">Full Name : *</label>
           <input
             className="popupInput"
             type="text"
             name="$full name"
             required
           />
-          <label htmlFor="phone">Phone:</label>
+          <label htmlFor="phone">Phone : *</label>
           <input className="popupInput" type="text" name="$phone" required />
-          <label htmlFor="phone">Physical Adress:</label>
+          <label htmlFor="phone">Physical Adress : *</label>
           <input className="popupInput" type="text" name="$adress" />
+          <label htmlFor="phone">Discount Code :</label>
+          <input className="popupInput" type="text" name="$discount" />
           <input
             type="hidden"
             name="redirectTo"
@@ -539,17 +541,21 @@ function CartPopup(props) {
               readOnly
               value={Array.from(props.cart)}
             />
-            <label htmlFor="fullName">Full Name:</label>
+            <label htmlFor="fullName">Full Name: *</label>
             <input
               className="popupInput"
               type="text"
               name="$full name"
               required
             />
-            <label htmlFor="phone">Phone:</label>
+            <label htmlFor="phone">Phone : *</label>
             <input className="popupInput" type="text" name="$phone" required />
-            <label htmlFor="phone">Physical Adress:</label>
+            <label htmlFor="phone">Physical Adress : *</label>
             <input className="popupInput" type="text" name="$adress" />
+            <label htmlFor="phone">Discount Code :</label>
+            <input className="popupInput" type="text" name="$discount" />
+            
+
             <div className="notice">
               Your order will be processed once you click the order button.
             </div>
