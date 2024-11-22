@@ -98,5 +98,23 @@ export const data = [
       "An overworked book publicist with a perfectly planned future hits a snag when she falls in love with her temporary roommate…only to discover he lives seven years in the past, in this witty and wise new novel from the New York Times bestselling author of The Dead Romantics.",
     tags: ["Romance", "Fiction", "Self Help", "Fantasy"],
   },
+  {
+    Book: "Le Manuel",
+    author: "Épictète",
+    price: "750 DA",
+    image: "https://imgur.com/a/le-manuel-9QITFhw", // Updated to a unique image
+    descp:
+      "'Le Manuel d'Épictète' est un guide stoïcien qui enseigne à vivre en paix avec soi-même et le monde, en se concentrant sur ce qui dépend de nous (pensées, actions) et en acceptant ce qui échappe à notre contrôle. Un classique de sagesse et de sérénité.",
+    tags: ["Philosophie", "Non-Fiction", "Stoicisme"],
+  },
+  {
+    Book: "This Is Marketing",
+    author: "Seth Goden",
+    price: "850 DA",
+    image: "https://imgur.com/a/9DoBwDU", // Updated to a unique image
+    descp:
+      "'This Is Marketing' by Seth Godin is a must-read for anyone looking to create impactful, customer-focused marketing. It highlights the importance of building trust, understanding your audience, and offering value that truly resonates. With practical insights, it shifts the focus from mass appeal to meaningful connections that drive lasting change.",
+    tags: ["Marketing", "Non-Fiction", "Self Developement"],
+  },
 
 ];
