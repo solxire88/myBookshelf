@@ -102,7 +102,7 @@ export const data = [
     Book: "Le Manuel",
     author: "Épictète",
     price: "750 DA",
-    image: "https://imgur.com/a/le-manuel-9QITFhw", // Updated to a unique image
+    image: "https://i.imgur.com/sccEggv.png", // Updated to a unique image
     descp:
       "'Le Manuel d'Épictète' est un guide stoïcien qui enseigne à vivre en paix avec soi-même et le monde, en se concentrant sur ce qui dépend de nous (pensées, actions) et en acceptant ce qui échappe à notre contrôle. Un classique de sagesse et de sérénité.",
     tags: ["Philosophie", "Non-Fiction", "Stoicisme"],
@@ -111,7 +111,7 @@ export const data = [
     Book: "This Is Marketing",
     author: "Seth Goden",
     price: "850 DA",
-    image: "https://imgur.com/a/9DoBwDU", // Updated to a unique image
+    image: "https://i.imgur.com/wz2XFLa.png", // Updated to a unique image
     descp:
       "'This Is Marketing' by Seth Godin is a must-read for anyone looking to create impactful, customer-focused marketing. It highlights the importance of building trust, understanding your audience, and offering value that truly resonates. With practical insights, it shifts the focus from mass appeal to meaningful connections that drive lasting change.",
     tags: ["Marketing", "Non-Fiction", "Self Developement"],
@@ -120,7 +120,7 @@ export const data = [
     Book: "White Nights",
     author: "Fyodor Dostoyevsky",
     price: "750 DA",
-    image: "https://imgur.com/a/nz68gkR", // Updated to a unique image
+    image: "https://i.imgur.com/rv9RLuB.jpeg", // Updated to a unique image
     descp:
       "'White Nights' by Fyodor Dostoevsky is a poignant tale of love, loneliness, and fleeting connections. Set against the dreamy backdrop of St. Petersburg, it follows a solitary dreamer who forms a brief yet profound bond with a young woman. This timeless novella captures the beauty and heartbreak of human connection in Dostoevsky’s signature lyrical style.",
     tags: ["Romance", "Fiction", "Russian Literature"],
