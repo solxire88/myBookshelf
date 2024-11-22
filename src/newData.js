@@ -116,5 +116,14 @@ export const data = [
       "'This Is Marketing' by Seth Godin is a must-read for anyone looking to create impactful, customer-focused marketing. It highlights the importance of building trust, understanding your audience, and offering value that truly resonates. With practical insights, it shifts the focus from mass appeal to meaningful connections that drive lasting change.",
     tags: ["Marketing", "Non-Fiction", "Self Developement"],
   },
+   {
+    Book: "White Nights",
+    author: "Fyodor Dostoyevsky",
+    price: "750 DA",
+    image: "https://imgur.com/a/nz68gkR", // Updated to a unique image
+    descp:
+      "'White Nights' by Fyodor Dostoevsky is a poignant tale of love, loneliness, and fleeting connections. Set against the dreamy backdrop of St. Petersburg, it follows a solitary dreamer who forms a brief yet profound bond with a young woman. This timeless novella captures the beauty and heartbreak of human connection in Dostoevsky’s signature lyrical style.",
+    tags: ["Romance", "Fiction", "Russian Literature"],
+  },
 
 ];
