@@ -44,4 +44,13 @@ export const data2 = [
       "Concise and to the point — the book can be read during a week. During that week, you will learn almost everything modern machine learning has to offer. The author and other practitioners have spent years learning these concepts.",
     tags: ["Artificial Intelligence", "Data Science", "Computer Science"],
   },
+  {
+    "Book": "Aide-Mémoire Mathématiques",
+    "author": "Dunod",
+    "price": "1150 DA",
+    "image": "https://i.imgur.com/qDpZoez.png",
+    "descp":
+      "Un guide pratique qui résume les bases des mathématiques, couvrant l’algèbre, l’analyse, la géométrie, les probabilités et les statistiques. Clair et compact, il est parfait pour réviser ou comprendre rapidement les notions essentielles.",
+    "tags": ["Mathématique", "Prépa", "Licence"]
+},
 ];
