@@ -121,7 +121,7 @@ export const data = [
     author: "Erin Doom",
     price: "1100 DA",
     image: "https://i.imgur.com/ylXhQzO.jpeg",
-    description:
+    descp:
       "Nica, une jeune orpheline de 17 ans, voit son rêve se réaliser lorsqu’elle est adoptée par une famille. Elle quitte l’orphelinat et ses légendes inquiétantes, notamment celle du « Fabricant de larmes ». Cependant, sa nouvelle vie est perturbée par Rigel, un autre orphelin adopté par la même famille, qui semble déterminé à rendre son quotidien infernal.",
     tags: ["Fiction", "Romance", "Fantasy"],
   },
@@ -130,7 +130,7 @@ export const data = [
     author: "Erin Doom",
     price: "1100 DA",
     image: "https://i.imgur.com/frN9bU7.jpeg",
-    description:
+    descp:
       "La relation conflictuelle entre Nica et Rigel s’intensifie, oscillant entre méfiance et sentiments inavoués. Tandis que des secrets de leur passé resurgissent, les deux jeunes découvrent que leur histoire est plus liée à la sombre légende qu’ils ne l’auraient imaginé.",
     tags: ["Fiction", "Romance", "Fantasy"],
   },
