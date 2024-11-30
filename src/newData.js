@@ -117,7 +117,7 @@ export const data = [
     tags: ["Romance", "Fiction", "Russian Literature"],
   },
   {
-    name: "Fabricant de larmes - partie 1",
+    Book: "Fabricant de larmes - partie 1",
     author: "Erin Doom",
     price: "1100 DA",
     image: "https://i.imgur.com/ylXhQzO.jpeg",
@@ -126,7 +126,7 @@ export const data = [
     tags: ["Fiction", "Romance", "Fantasy"],
   },
   {
-    name: "Fabricant de larmes - partie 2",
+    Book: "Fabricant de larmes - partie 2",
     author: "Erin Doom",
     price: "1100 DA",
     image: "https://i.imgur.com/frN9bU7.jpeg",
