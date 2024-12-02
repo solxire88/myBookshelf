@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { data } from "./newData.js";
 import { data2 } from "./data2.js";
 import { Routes, Route, Link } from "react-router-dom";
@@ -56,6 +56,23 @@ function Literature({ addToCartL, cart, deleteFromCartL }) {
   const [cardPopup, setCardPopup] = useState("");
   const [cartPopup, setCartPopup] = useState("");
   const [clickedCardName, setClickedCardName] = useState("");
+
+
+  const [shuffledData, setShuffledData] = useState(data); // Data state to store shuffled array
+  const shuffleArray = (array) => {
+    // Fisher-Yates Shuffle
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+    }
+    return array;
+  };
+
+  useEffect(() => {
+    // Shuffle data when the component mounts or when the data changes
+    setShuffledData(shuffleArray([...data])); // Make sure to clone data to avoid mutating original
+  }, [data]); // Dependency array ensures shuffle happens when 'data' changes
+
 
   return (
     <>
@@ -147,11 +164,11 @@ function Literature({ addToCartL, cart, deleteFromCartL }) {
           card={clickedCardName}
         ></Popup>
         <div className="grid container">
-          {data
+          {shuffledData
             .filter((item) => {
               return search.toLowerCase() === ""
                 ? item
-                : item.Book.toLowerCase().includes(search);
+                : item.Book.includes(search);
             })
             .map((item) => {
               return (
@@ -183,6 +200,21 @@ function Science({ addToCartL, cart, deleteFromCartL }) {
   const [cardPopup, setCardPopup] = useState("");
   const [cartPopup, setCartPopup] = useState("");
   const [clickedCardName, setClickedCardName] = useState("");
+
+  const [shuffledData, setShuffledData] = useState(data2); // Data state to store shuffled array
+  const shuffleArray = (array) => {
+    // Fisher-Yates Shuffle
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+    }
+    return array;
+  };
+
+  useEffect(() => {
+    // Shuffle data when the component mounts or when the data changes
+    setShuffledData(shuffleArray([...data2])); // Make sure to clone data to avoid mutating original
+  }, [data2]); // Dependency array ensures shuffle happens when 'data' changes
 
   return (
     <>
@@ -274,11 +306,11 @@ function Science({ addToCartL, cart, deleteFromCartL }) {
           card={clickedCardName}
         ></Popup>
         <div className="grid container">
-          {data2
+          {shuffledData
             .filter((item) => {
               return search.toLowerCase() === ""
                 ? item
-                : item.Book.toLowerCase().includes(search);
+                : item.Book.includes(search);
             })
             .map((item) => {
               return (
