@@ -142,5 +142,14 @@ export const data2 = [
     image: "https://i.imgur.com/e7ayLtH.jpeg",
     descp: "Mini Manuel de Comptabilité de Gestion est un guide pratique qui présente les principes essentiels de la comptabilité de gestion, de l'analyse des coûts à la prise de décision financière. Idéal pour les étudiants et professionnels en gestion.",
     tags: ["Licence", "Prépa", "Comptabilité"]
+  },
+  {
+  Book: "Bactériologie Médicale",
+  author: "Elsevier",
+  price: "1550 DA",
+  image: "https://i.imgur.com/mAKhflo.jpeg",
+  descp: "Ce livre est divisé en deux parties - \"Bactériologie Médicale\" d'Elsevier est un ouvrage de référence qui couvre les bases de la bactériologie appliquée à la médecine. Il explore les caractéristiques des bactéries, les infections qu'elles causent et les méthodes de diagnostic et de traitement. Essentiel pour les étudiants et professionnels de la santé.",
+  tags: ["Médecine", "Pharmacie", "Résidanat"]
   }
+
 ];
