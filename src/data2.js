@@ -53,7 +53,7 @@ export const data2 = [
       "Un guide pratique qui résume les bases des mathématiques, couvrant l’algèbre, l’analyse, la géométrie, les probabilités et les statistiques. Clair et compact, il est parfait pour réviser ou comprendre rapidement les notions essentielles.",
     tags: ["Mathématique", "Prépa", "Licence"],
   },
-  [
+
   {
     "Book": "Aide-Mémoire Composants Électroniques",
     "author": "Dunod",
