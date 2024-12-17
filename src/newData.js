@@ -142,5 +142,23 @@ export const data = [
   descp: "The Tearsmith by Erin Doom follows Nica, a 17-year-old orphan, whose life changes when she's adopted into a new family. However, her peace is disrupted by Rigel, another adopted orphan, as they unravel secrets tied to a haunting legend.",
   tags: ["Fiction", "Romance", "Netflix"]
 },
+{
+    Book: "Kiara Tome I",
+    author: "Hazel Diaz",
+    price: "1350 DA",
+    image: "https://i.imgur.com/5hsWxaP.jpeg",
+    descp: "Kiara par Hazel Diaz, Tome 1, suit Kiara, une jeune femme au passé mystérieux, qui se lance dans un voyage de découverte de soi et d’aventure. Alors qu'elle navigue dans un monde rempli de dangers et d’intrigues, Kiara découvre des pouvoirs cachés en elle et des secrets sombres qui pourraient bouleverser tout ce qu'elle connaît.",
+    tags: ["Fiction", "Adventure"]
+},
+{
+    Book: "Kiara Tome II",
+    author: "Hazel Diaz",
+    price: "1350 DA",
+    image: "https://i.imgur.com/DaK6LOz.jpeg",
+    descp: "Kiara par Hazel Diaz, Tome 2, poursuit l’aventure de Kiara, qui, après avoir découvert ses pouvoirs, se retrouve confrontée à de nouvelles menaces et à des alliances dangereuses. Alors que les mystères autour de son passé s’éclaircissent, elle doit faire face à des choix difficiles qui pourraient changer le cours de son destin.",
+    tags: ["Fiction", "Adventure"]
+}
+
+
 
 ];
