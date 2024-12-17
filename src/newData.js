@@ -134,4 +134,13 @@ export const data = [
       "La relation conflictuelle entre Nica et Rigel s’intensifie, oscillant entre méfiance et sentiments inavoués. Tandis que des secrets de leur passé resurgissent, les deux jeunes découvrent que leur histoire est plus liée à la sombre légende qu’ils ne l’auraient imaginé.",
     tags: ["Fiction", "Romance", "Fantasy"],
   },
+  {
+  Book: "The Tearsmith",
+  author: "Erin Doom",
+  price: "1350 DA",
+  image: "https://i.imgur.com/eJoO48v.jpeg",
+  descp: "The Tearsmith by Erin Doom follows Nica, a 17-year-old orphan, whose life changes when she's adopted into a new family. However, her peace is disrupted by Rigel, another adopted orphan, as they unravel secrets tied to a haunting legend.",
+  tags: ["Fiction", "Romance", "Netflix"]
+},
+
 ];
